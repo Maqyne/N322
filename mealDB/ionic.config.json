@@ -1,0 +1,7 @@
+{
+  "name": "mealDB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

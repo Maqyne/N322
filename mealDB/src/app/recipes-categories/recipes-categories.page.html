@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recipe Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="response">
+    <ion-item
+      *ngFor="let meal of response"
+      button
+      (click)="clicked(meal)"
+      routerDirection="forward"
+    >
+      {{meal.strCategory}}
+    </ion-item>
+  </ion-list>
+</ion-content>

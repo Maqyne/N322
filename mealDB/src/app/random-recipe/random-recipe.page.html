@@ -1,0 +1,154 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Random Recipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list *ngIf="response">
+    <ion-list-header lines="full" id="container">
+      <strong>pull down for a new recipe</strong>
+    </ion-list-header>
+
+    <ion-card>
+      <img src="{{response.meals[0].strMealThumb}}" />
+      <ion-card-header>
+        <ion-card-subtitle
+          >Category: {{response.meals[0].strCategory}} <br />
+          Region: {{response.meals[0].strArea}}
+        </ion-card-subtitle>
+        <ion-card-title>{{response.meals[0].strMeal}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid>
+          <!-- Item Inset Lines -->
+
+          <ion-row class="ion-align-items-center">
+            <ion-col>
+              <!-- Item Full Lines -->
+              <ion-item>
+                <ion-label>Amount</ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col>
+              <ion-item lines="full">
+                <ion-label>Ingredients</ion-label>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure1}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient1}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure2}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient2}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure3}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient3}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure4}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient4}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure5}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient5}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure6}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient6}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure7}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient7}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure8}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient8}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure9}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient9}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure10}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient10}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure11}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient11}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure12}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient12}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure13}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient13}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure14}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient14}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure15}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient15}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure16}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient16}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure17}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient17}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure18}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient18}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure19}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient19}} </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-center">
+            <ion-col> {{response.meals[0].strMeasure20}} </ion-col>
+            <ion-col> {{response.meals[0].strIngredient20}} </ion-col>
+          </ion-row>
+        </ion-grid>
+        <br />
+        <ion-item lines="full">
+          <ion-label>Directions</ion-label>
+        </ion-item>
+        {{response.meals[0].strInstructions}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

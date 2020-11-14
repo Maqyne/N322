@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     MealDB
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>MealDB</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      With our recipe library the perfect meal is right at your finger-tips!
+    </ion-card-content>
+  </ion-card>
+  
+  
+  
+  <ion-list>   
+
+<!-- Item as a Button -->
+<ion-item button routerLink="/recipes-regional" routerDirection="forward">
+  <ion-label>
+    Recipes by Region
+  </ion-label>
+</ion-item>
+
+<ion-item button routerLink="/recipes-categories" routerDirection="forward">
+  <ion-label>
+    Recipes by Category
+  </ion-label>
+</ion-item>
+
+<ion-item button routerLink="/random-recipe" routerDirection="forward">
+  <ion-label>
+    Recipe at Random
+  </ion-label>
+</ion-item>
+    
+
+
+
+
+
+
+
+
+  </ion-list>
+</ion-content>
