@@ -1,0 +1,7 @@
+{
+  "name": "FinalN322",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

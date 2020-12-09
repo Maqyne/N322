@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> PokéManager </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PokéManager</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="professor"></div>
+
+  <div class="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title> Hello there!</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Welcome to the world of POKEMON! My name is OAK!
+      </ion-card-content>
+    </ion-card>
+    <!-- <strong>Ready to create an app?</strong>
+    <p>
+      Start with Ionic
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components"
+        >UI Components</a
+      >
+    </p> -->
+  </div>
+
+  <ion-tabs id="tabs" style="display: none">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/national-dex" tab="National">
+        <ion-icon name="star"></ion-icon>
+        <ion-label>National Dex</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/personal-dex" tab="Personal">
+        <ion-icon name="person-add"></ion-icon>
+        <ion-label>Your Dex</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/team-builder" tab="Teams">
+        <ion-icon name="build"></ion-icon>
+        <ion-label>Team Builder</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <div id="bot">
+    <ion-button class="login" (click)="login()" expand="full"
+      >Login
+    </ion-button>
+  </div>
+</ion-content>

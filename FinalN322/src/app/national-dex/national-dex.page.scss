@@ -1,0 +1,14 @@
+ion-title {
+  // background-color: var(--ion-color-primary);
+  text-align: center;
+}
+ion-content {
+  background-color: transparent;
+  // overwrite inline styles
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

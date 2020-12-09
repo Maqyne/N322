@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>National Dex</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="response">
+    <ion-item
+      *ngFor="let result of response"
+      button
+      (click)="(result)"
+      routerDirection="forward"
+    >
+      {{result.name}}
+    </ion-item>
+  </ion-list>
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/national-dex" tab="National">
+        <ion-icon name="star"></ion-icon>
+        <ion-label>National Dex</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/personal-dex" tab="Personal">
+        <ion-icon name="person-add"></ion-icon>
+        <ion-label>Your Dex</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/team-builder" tab="Teams">
+        <ion-icon name="build"></ion-icon>
+        <ion-label>Team Builder</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+</ion-content>

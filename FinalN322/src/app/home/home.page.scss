@@ -1,0 +1,77 @@
+ion-header {
+}
+
+ion-title {
+  // background-color: var(--ion-color-primary);
+  text-align: center;
+}
+ion-content {
+  --background: none;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(var(--ion-color-medium-rgb), 0.6),
+      rgba(var(--ion-color-medium-rgb), 0.6)
+    ),
+    url(https://archives.bulbagarden.net/media/upload/a/a7/PSMD_poster.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // ion-tabs {
+  //   display: none;
+  // }
+}
+#bot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1%;
+}
+.professor {
+  height: 75%;
+  width: 100%;
+  background-image: url(https://cdn.bulbagarden.net/upload/3/3e/Lets_Go_Pikachu_Eevee_Professor_Oak.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+.container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75%;
+  transform: translateY(-50%);
+
+  ion-card {
+    opacity: 0.9;
+    ion-card-subtitle {
+      opacity: 1;
+      color: var(--ion-color-light);
+      padding-top: 1vh;
+    }
+    ion-card-title {
+      text-transform: capitalize;
+    }
+  }
+  strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
